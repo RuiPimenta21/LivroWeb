@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex005</title>
+    <link rel="shortcut icon" href="imagens/Fav_Ico1.ico" type="image/x-icon">
+</head>
+<body>
+     <!--
+        Formatos de video mais utilizados e suportados pelo htm5
+        .mp4     466kb
+        .m4v     466kb
+        .webm    783kb
+        .ogv    8125kb
+    -->
+    <header>
+        <h1>Multimédia</h1>
+    </header>
+    <section>
+        <h2>Vídeos</h2>
+        <article>
+            <p>Hospedados localmente</p>
+            <video controls autoplay loop width="300" height="200" poster="imagens/Thumbnail.png">
+                <source src="videos/meuVideo.mp4" type="video/mp4">
+                <source src="videos/meuVideo.m4v" type="video/mp4">
+                <source src="videos/meuVideo.webm" type="video/webm">
+                <source src="videos/meuVideo.ogv" type="video/ogg">
+                <p>
+                    Infelizmente o teu navegador não suporta vídeo (mp4,m4v,webm e ogg).
+                    <li>Clica <a href="videos/meuVideo.ogv" download="meuVideo.ogv" type="application/ogg">Aqui!</a></li>
+                </p>
+            </video>
+        </article>
+        <article>
+            <p>Hospedados externamente (YouTube)</p>
+            <iframe 
+                width="300" height="200" src="https://www.youtube.com/embed/9rZKhGrQ1wo" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </article>
+    </section>
+    
+    <section>
+        <h2>Áudio</h2>
+        <article>
+            <p>Áudio hospedado</p>
+            <audio preload="metadata" controls muted>
+                <source src="audios/Ariana_Grande_positions.mp3" type="audio/mpeg">
+                <source src="audios/Ariana_Grande_positions.wav" type="audio/wav">
+                <p> 
+                    Infelizmente o teu navegador não suporta audio (mp3 e wav).
+                    <li>Clica <a href="audio/Born_a_Rockstar.mp3" download="Born_a_Rockstar.mp3" type="application/mpeg">Aqui!</a></li>
+                </p>
+            </audio>
+        </article>
+    </section>
+</body>
+</html>
