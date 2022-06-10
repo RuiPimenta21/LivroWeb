@@ -1,0 +1,26 @@
+/* Selectores por tipo de elemento*/
+p{
+    text-align: center;
+    color: red;
+}
+
+/* Selectores por tipo de elemento*/
+h1, h2, h3{
+    text-align: center;
+    color: red;
+}
+
+/* Selectores por identificador*/
+#myPassord{
+    background-color: #d0e4fe;
+}
+
+/* Selectores por classe*/
+.centro{
+    text-align: center;
+}
+
+/* Selectores por elemento e classe*/
+p.centro{
+    text-align: center;
+}
