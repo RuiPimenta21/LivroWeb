@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex009</title>
+    <link rel="shortcut icon" href="imagens/Fav_Ico1.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Arrays  --> 
+    
+    
+    <script>
+        
+        //creat array
+        let countries = ["Bmw", "Mercedes","Toyota"];
+
+        //array é um objeto
+        console.log(typeof countries)
+
+        for (let i=0; i<countries.length ; i++){
+            alert(countries[i]);
+        }
+
+        //Add element to array
+        countries.push("Audi");
+        
+        for (let i=0; i<countries.length ; i++){
+            alert(countries[i]);
+        }
+
+        //Declare and after set the value
+        const person = new Array();
+        person[0] = "Rui";
+        person[1] = "Maria";
+        person[2] = "Tiago";
+        person.length;    // Will return 3
+        console.log (person[0]);
+
+        //ver o array completo
+        console.log (person)
+
+    </script>
+</body>
+</html>

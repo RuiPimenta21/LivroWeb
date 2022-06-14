@@ -8,14 +8,23 @@
     <link rel="shortcut icon" href="imagens/Fav_Ico1.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- Funções  --> 
+    
+    
     <script>
       let a = parseFloat(prompt("Introduza um valor:"))
       let b = parseFloat(prompt("Introduza um segundo valor:"))
       alert(parseFloat(soma(a, b)))
-
+      
+           
+      //funcao arrow (não é bem uma funcao), precisa de ser feito o calculo antes de chamar a funcao 
+      let soma1 = (c,d) => c + d
+      console.log("A soma de "+ 3 +" + "+ 5 +" = "+ soma1(3,5))
+      
+      //funcao normal
       function soma (a, b){
         return a + b
-      }    
+      }  
     </script>
 </body>
 </html>
