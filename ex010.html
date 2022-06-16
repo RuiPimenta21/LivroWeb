@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex010</title>
+    <link rel="shortcut icon" href="imagens/Fav_Ico1.ico" type="image/x-icon">
+</head>
+<body>
+    <script>
+        //declarar e depois atribuir valor
+        const person = new Array();
+        person[0] = "Rui";
+        person[1] = "Maria";
+        person[2] = "Tiago";
+
+        //forEach
+        person.forEach (imprime);
+
+        
+        function imprime(item, index) {
+            console.log(index + ": " + item); 
+        }
+    </script>
+</body>
+</html>

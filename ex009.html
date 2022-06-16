@@ -13,38 +13,49 @@
     
     <script>
         
-        //creat array
-        let countries = ["Bmw", "Mercedes","Toyota"];
+        //crear array
+        let cars = ["Bmw", "Mercedes","Toyota","Citroen","Renault","Fiat","Peugeot"];
 
         //array é um objeto
-        console.log(typeof countries)
+        console.log(typeof cars)
 
-        for (let i=0; i<countries.length ; i++){
-            alert(countries[i]);
-        }
-
-        //Add element to array
-        countries.push("Audi");
+        //adiciona no inicio do array
+        cars.unshift("Itália");
         
-        for (let i=0; i<countries.length ; i++){
-            alert(countries[i]);
+        //adiciona no final do array
+        cars.push("Itália");
+             
+        //elimina o primero valor do array e mostra quem eliminou caso seja pedido a impressao
+        cars.shift()
+
+        //elimina o ultimo valor do array e mostra quem eliminou caso seja pedido a impressao
+        cars.pop()
+
+        //apaga elemento (deixa empty)
+        delete cars[3]
+        
+        // ver tamanho do array
+       cars.length;   
+
+        //imprimir array
+        for (let i=0; i<cars.length ; i++){
+            alert(cars[i]);
         }
 
-        //Declare and after set the value
+        //ver o array completo
+        console.log (person);
+        
+       
+        //declarar e depois atribuir valor
         const person = new Array();
         person[0] = "Rui";
         person[1] = "Maria";
         person[2] = "Tiago";
-        person.length;    // Will return 3
-        console.log (person[0]);
 
         //ver o array completo
         console.log (person);
 
-        //adiciona a cabeça
-        person.unshift("Pimenta");
-        console.log(person);
-
+        
     </script>
 </body>
 </html>
