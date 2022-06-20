@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex012</title>
+    <link rel="shortcut icon" href="imagens/Fav_Ico1.ico" type="image/x-icon">
+</head>
+<body>
+    <script>
+        //declarar e depois atribuir valor
+        let person = new Array();
+        person[0] = "Rui";
+        person[1] = "Maria";
+        person[2] = "Tiago";
+        person[3] = "João";
+        person[4] = "Paulo";
+        person[5] = "Pedro";
+        person[6] = "André";
+        person[7] = "Freitas";
+        person[8] = "Pimenta"
+
+        //procura no array
+
+        //procura o valor(retorna true ou false)
+        if(person.includes("Tiago")){
+            console.log("Tiago está na lista!")
+        }
+        
+        //cria um array com os elementos que passam no teste usuando funcao arrow
+       let nomeGrandes = person.filter(person => person.length > 6)
+       console.log(nomeGrandes)
+
+       //transforma o primerio caracter em minúsculas
+       let nomesMinusculos = person.map(x => x[0].toLowerCase() + x.slice(1))
+       console.log(nomesMinusculos)
+
+
+        
+
+    </script>
+</body>
+</html>

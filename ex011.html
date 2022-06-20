@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex011</title>
+    <link rel="shortcut icon" href="imagens/Fav_Ico1.ico" type="image/x-icon">
+</head>
+<body>
+    <script>
+        //declarar e depois atribuir valor
+        let person = new Array();
+        person[0] = "Rui";
+        person[1] = "Maria";
+        person[2] = "Tiago";
+
+        //ordem alfabética (não funciona númericamente)
+        person.sort()
+        console.log(person)
+        
+        //ordem alfabética inversa
+        person.reverse()
+        console.log(person)
+
+       
+        //ordernar numeros ascendente
+        let numeros = [12, 7, 10, 18, 6]
+        numeros.sort(ordenaAscendente)
+        console.log(numeros)
+        
+        //ordernar numeros descendente
+        numeros.reverse(ordenaAscendente)
+        console.log(numeros)
+
+        function ordenaAscendente(a,b){
+            return a-b
+        }
+        
+
+    </script>
+</body>
+</html>

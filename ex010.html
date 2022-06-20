@@ -10,18 +10,35 @@
 <body>
     <script>
         //declarar e depois atribuir valor
-        const person = new Array();
+        let person = new Array();
         person[0] = "Rui";
         person[1] = "Maria";
         person[2] = "Tiago";
+
+        //for
+        for(let i=0; i<person.length; i++){
+            console.log(person[i])
+        }
+        
+        //for of 
+        for(let i in person){
+            console.log(person[i])
+        }
 
         //forEach
         person.forEach (imprime);
 
         
+
+
+
+
+
         function imprime(item, index) {
             console.log(index + ": " + item); 
-        }S
+        }
+
+
     </script>
 </body>
 </html>
