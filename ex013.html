@@ -9,16 +9,33 @@
 </head>
 <body>
     <script>
-        //declarar e depois atribuir valor
+       
+       //criar objeto 1
         let pessoa = {
             nome: "Rui",
             idade: 28,
             genero: "masculino"
         }
+        console.log(pessoa.nome)
 
-        let carro = {}
-
+        
+        //criar objeto 2
+        let marca = "Audi"
+        let modelo = "A3"
+        carro = {marca, modelo}
+        console.log(carro)
+          
+        
+        //criar objeto 3
         let animal = new Object()
+
+        animal.tipo = 'cão'
+        animal.cor = 'castanho'
+
+        console.log(animal)
+       
+     
+
     </script>
 </body>
 </html>

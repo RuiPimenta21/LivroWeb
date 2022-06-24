@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex014</title>
+    <link rel="shortcut icon" href="imagens/Fav_Ico1.ico" type="image/x-icon">
+</head>
+<body>
+    <script>
+       
+       //cria objeto 
+        let pessoa = {
+            nome: "Rui",
+            idade: 28,
+            genero: null,
+            telemovel: '912469374',
+            cidade: 'Guimarães'
+        }
+
+        console.log(pessoa)
+
+        //excluir atributos
+        delete pessoa.cidade
+        console.log(pessoa)
+
+        //verifica se existe atributo declarado
+        console.log("genero" in pessoa)
+        console.log("altura" in pessoa)
+
+
+        //percorre todos os atributo
+        for(let existe in pessoa){
+            console.log(existe)
+            
+        }
+       
+       
+     
+
+    </script>
+</body>
+</html>
