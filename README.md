@@ -12,3 +12,5 @@ ex010 -> Ciclos For (Array)(for, for_of, forEach)
 ex011 -> Ordenações em arrays
 ex012 -> Métodos em arrays (procura, filtra, e transforma)
 ex013 -> Criar objetos
+ex014 -> Atributos 
+ex015 -> Metodos

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex014</title>
+    <link rel="shortcut icon" href="imagens/Fav_Ico1.ico" type="image/x-icon">
+</head>
+<body>
+    <script>
+       
+       //cria objeto 
+        let carro = {
+            marca: "Rui",
+            modelo: 28,
+            velocidadeAtual: 0,
+                   
+            acelarar(){
+                this.velocidadeAtual +=  5
+            },
+            travar(){
+                if (this.velocidadeAtual <=5 ){
+                    this.velocidadeAtual = 0
+                }
+                else{
+                    this.velocidadeAtual -= 5
+                }    
+            },
+            buzina(){
+                return 'piiiiiiiiiiiii'
+            }
+        }
+
+        carro.acelarar()
+        carro.acelarar()
+        carro.travar()
+        carro.acelarar()
+        carro.acelarar()
+        carro.acelarar()
+        carro.travar()
+
+        console.log(carro.velocidadeAtual)
+        console.log(carro.buzina())
+       
+       
+     
+
+    </script>
+</body>
+</html>
