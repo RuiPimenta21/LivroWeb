@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex016</title>
+    <link rel="shortcut icon" href="imagens/Fav_Ico1.ico" type="image/x-icon">
+</head>
+<body>
+    <script>
+       
+       //cria objeto 
+        let carro1 = {
+            marca: "mercedes",
+            modelo: 'A3',
+            velocidadeAtual: 0,
+        }
+
+        //copiar endereço de memoria e os valores do objeto
+        //  se altear o carro1 ou o carro2, ambos vão ser alterados
+        let carro2 = carro1
+        carro2.marca = "bmw"
+
+        console.log(carro1.marca)
+        console.log(carro2.marca)
+
+        //****************************************************************
+
+        //cria objeto 
+        let pessoa1 = {
+            nome: "Rui",
+            idade: 28,
+        }
+
+        //copia apenas valores do objeto pessoa1 para pessoa2
+        //  se altear a pessoa1 ou o pessoa2, não vai afetar o outro
+        let pessoa2 = new Object()
+        for(let i in pessoa1){
+            pessoa2[i] = pessoa1[i]
+        }
+
+        pessoa2.nome = 'Maria'
+
+        console.log(pessoa1.nome)
+        console.log(pessoa2.nome)
+
+
+
+       
+       
+     
+
+    </script>
+</body>
+</html>

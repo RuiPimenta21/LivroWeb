@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex017</title>
+    <link rel="shortcut icon" href="imagens/Fav_Ico1.ico" type="image/x-icon">
+</head>
+<body>
+    <script>
+        class Carro{
+            constructor(marca, modelo, velocidadeAtual){
+                this.marca = marca
+                this.modelo =  modelo
+                this.velocidadeAtual =  0
+            }
+            acelera() {
+                this.velocidadeAtual += 5
+            }
+            trava(){
+                if(this.velocidadeAtual <= 5){
+                    this.velocidadeAtual = 0 
+                }
+                else{
+                    this.velocidadeAtual -= 5
+                }    
+            }
+            getMarca(){
+                return this.marca
+            }
+            getModelo(){
+                return this.modelo
+            }
+            setMarca(newMarca){
+                this.marca = newMarca
+            }
+            setModelo(newModelo){
+                this.modelo = newModelo
+            }
+        }
+
+        //cria objetos
+        let carro1 =  new Carro("Bmw","Serie3")
+        let carro2 =  new Carro("Audi","A3")
+        let carro3 =  new Carro()
+
+        //chama funcoes
+        carro3.setMarca("Porshe")
+        carro3.setModelo("911")
+        
+        carro3.acelera()
+
+
+        console.log(carro1.marca)
+        console.log(carro1.modelo)
+        console.log(carro1.velocidadeAtual)
+        console.log(carro2.marca)
+        console.log(carro2.modelo)
+        console.log(carro2.velocidadeAtual)
+        console.log(carro3.marca)
+        console.log(carro3.modelo)
+        console.log(carro3.velocidadeAtual)
+
+        
+
+
+    </script>
+</body>
+</html>

@@ -14,3 +14,5 @@ ex012 -> Métodos em arrays (procura, filtra, e transforma)
 ex013 -> Criar objetos
 ex014 -> Atributos 
 ex015 -> Metodos
+ex016 -> cópia objetos
+ex017 -> Classe e construtor
