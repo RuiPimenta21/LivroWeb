@@ -15,4 +15,5 @@ ex013 -> Criar objetos
 ex014 -> Atributos 
 ex015 -> Metodos
 ex016 -> cópia objetos
-ex017 -> Classe e construtor, instanceof(verifica se objeto pertence a contrutor)
+ex017 -> classe e construtor, instanceof(verifica se objeto pertence a contrutor)
+ex018 -> classe externa
