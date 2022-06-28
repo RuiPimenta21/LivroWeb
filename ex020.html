@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex020</title>
+    <link rel="shortcut icon" href="imagens/Fav_Ico1.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!--   cria elemento   -->
+    <!--   cria textNode   -->
+    <!--   associa textNode a elemento  -->
+    <!--   adiciona elemento   -->
+
+    <div id="minhaDiv">
+        <p>Um primeiro parágrafo</p>
+        <p>Um segundo parágrafo</p>
+    </div>
+
+    <script>
+
+        let paragrafo = document.createElement("p")
+        let texto = document.createTextNode("Um terceiro parágrafo")
+        let elemento = document.getElementById("minhaDiv")
+        
+        //paragrafo recebe texto
+        paragrafo.appendChild(texto)
+
+        //minhaDiv recebe o paragrafo 
+        elemento.appendChild(paragrafo)
+    </script>
+
+    <!-- **************************************************************************** -->
+
+    <!--   cria elemento  e altera -->
+    <p id="demo1">Conteudo HMTL</p>
+    <script>
+        document.getElementById("demo1").innerHTML = "novo conteudo html"
+    </script>
+</body>
+</html>

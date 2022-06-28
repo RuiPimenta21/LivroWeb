@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex019</title>
+    <link rel="shortcut icon" href="imagens/Fav_Ico1.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!--   mostra o conteudo atraves do id   -->
+
+    <p id="txt1">Olá, Mundo!</p>
+    <p>Um segundo parágrafro</p>
+    <script>
+        let meuElemento = document.getElementById("txt1")
+        alert("O texto no 1º parágrafo é " + meuElemento.innerHTML)
+     </script>  
+     
+    <!--   mostra o conteudo atraves da class   -->
+
+    <p class="txt2">Olá, Mundo!</p>
+    <p class="txt2">Olá, POrtugal!</p>
+    <p class="txt3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam aspernatur eius tempora iure ducimus sint suscipit nemo nihil incidunt autem consequatur praesentium velit consequuntur quas sunt reprehenderit, a repudiandae fuga.</p>
+     <script>
+        let numSaudacoes = document.querySelectorAll("p.txt2")
+        alert("Numero de saudações: "+ numSaudacoes.length)
+     </script>
+
+     
+</body>
+</html>

@@ -16,4 +16,4 @@ ex014 -> Atributos
 ex015 -> Metodos
 ex016 -> cópia objetos
 ex017 -> classe e construtor, instanceof(verifica se objeto pertence a contrutor)
-ex018 -> classe externa
+ex018 -> integração local e extrerna JS (classe externa e interna)

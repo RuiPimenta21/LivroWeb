@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="imagens/Fav_Ico1.ico" type="image/x-icon">
 </head>
 <body>
+
+    <!-- integracao externa-->
     <script src="classes/carro.js"></script>
     <script>
         let carro1 =  new Carro("Bmw","Serie3")
@@ -19,6 +21,7 @@
         carro1.acelera()
         carro1.trava()
 
+        console.log("*******  integracao externa  *******")
         console.log(carro1.marca)
         console.log(carro1.modelo)
         console.log(carro1.velocidadeAtual)
@@ -26,5 +29,53 @@
         console.log(carro2.modelo)
         console.log(carro2.velocidadeAtual)
     </script>
+
+    <!-- integracao interna-->
+    <script>
+        class Pessoa{
+            constructor(nome, idade, sexo){
+                this.nome = nome
+                this.idade = idade
+                this.sexo = sexo
+            }
+            falar(){
+                return "Olá mundo!"
+            }
+            getNome(){
+                return this.nome
+            }
+            getIdade(){
+                return this.idade
+            }
+            getSexo(){
+                return this.sexo
+            }
+            setNome(newNome){
+                this.nome = newNome
+            }
+            setNome(newIdade){
+                this.idade = newIdade
+            }
+            setNome(newSexo){
+                this.sexo = newSexo
+            }
+        }
+
+        let pessoa1 = new Pessoa("Rui", 27, 'M')
+        let pessoa2 = new Pessoa("Maria", 27, 'F')
+        
+        console.log("*******  integracao interna  *******")
+        pessoa1.falar()
+        pessoa2.falar()
+       
+        console.log(pessoa1.nome)
+        console.log(pessoa1.idade)
+        console.log(pessoa1.sexo)
+        console.log(pessoa2.nome)
+        console.log(pessoa2.idade)
+        console.log(pessoa2.sexo)
+
+    </script>
+
 </body>
 </html>
