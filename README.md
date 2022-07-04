@@ -17,5 +17,6 @@ ex015 -> Metodos
 ex016 -> cópia objetos
 ex017 -> classe e construtor, instanceof(verifica se objeto pertence a contrutor)
 ex018 -> integração local e extrerna JS (classe externa e interna)
-ex019 -> DOM (document)
-ex020 -> DOM (document)
+ex019 -> DOM (document acede aos elementos html, altera os elementos html, adiciona ou remove elementos html)
+ex020 -> DOM (document acede aos elementos html, altera os elementos html, adiciona ou remove elementos html)
+ex021 -> DOM (document acede aos elementos html, altera os elementos html, adiciona ou remove elementos html)~
