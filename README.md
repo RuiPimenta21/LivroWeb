@@ -19,4 +19,9 @@ ex017 -> classe e construtor, instanceof(verifica se objeto pertence a contrutor
 ex018 -> integração local e extrerna JS (classe externa e interna)
 ex019 -> DOM (document acede aos elementos html, altera os elementos html, adiciona ou remove elementos html)
 ex020 -> DOM (document acede aos elementos html, altera os elementos html, adiciona ou remove elementos html)
-ex021 -> DOM (document acede aos elementos html, altera os elementos html, adiciona ou remove elementos html)~
+ex021 -> DOM (document acede aos elementos html, altera os elementos html, adiciona ou remove elementos html)
+ex022 -> Eventos com funcao js dentro dentro do ficheiro hmt e usando onclick
+ex023 -> Eventos com funcao js fora do ficheiro hmt e sem onclick
+ex023 -> Eventos com funcao js fora do ficheiro hmt e sem onclick 
+ex023 -> Eventos com funcao js fora do ficheiro hmt  
+

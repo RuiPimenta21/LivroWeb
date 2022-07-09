@@ -8,7 +8,17 @@
     <link rel="shortcut icon" href="imagens/Fav_Ico1.ico" type="image/x-icon">
 </head>
 <body>
-    
+    <p>Clique no botão para exebir a data e hora atual.</p>
+    <p id="resultado"></p>
 
+    <!-- onclick -->
+    <button onclick="mostraData()">Botão</button>
+
+    <script>
+        function mostraData(){
+            let data = new Date()
+            document.getElementById("resultado").innerHTML = data
+        }
+    </script>
 </body>
 </html>
