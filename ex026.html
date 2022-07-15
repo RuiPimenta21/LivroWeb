@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex026</title>
+    <link rel="shortcut icon" href="imagens/Fav_Ico1.ico" type="image/x-icon">
+</head>
+<body>
+    <script src="classes/json1.js"></script> 
+    <script>
+        
+        //passa de JSON para string
+        let json1 = '{ "nome":"Jorge", "idade":28, "cidade":"Porto" }'
+        let string1 = JSON.parse(json1)
+        console.log(string1.nome)
+
+        //passa de string para JSON
+        let string2 = '{ "nome":"Artur", "idade":55, "cidade":"Lisboa" }'
+        let json2 = JSON.stringify(string2)
+        console.log(json2) ////imprime objeto JSON
+
+
+        //*****************************************************************
+
+        //imprime objeto JSON
+        console.log(dados.empregado)
+
+        //imprime atributo de objecto
+        console.log(dados.empregado.nome)
+        console.log(dados.empregado.idade)
+        for(let i=0; i<dados.empregado.idiomas.length; i++){
+            console.log(dados.empregado.idiomas[i])
+        }
+        
+
+
+        
+        
+
+       
+
+        
+
+
+    </script>
+</body>
+</html>

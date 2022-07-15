@@ -23,5 +23,8 @@ ex021 -> DOM (document acede aos elementos html, altera os elementos html, adici
 ex022 -> Eventos com funcao js dentro dentro do ficheiro hmt e usando onclick
 ex023 -> Eventos com funcao js fora do ficheiro hmt e sem onclick
 ex023 -> Eventos com funcao js fora do ficheiro hmt e sem onclick 
-ex023 -> Eventos com funcao js fora do ficheiro hmt  
+ex023 -> Eventos com funcao js fora do ficheiro hmt
+ex024 -> Eventos com funcao js fora do ficheiro hmt  
+ex025 -> Eventos com funcao js fora do ficheiro hmt
+ex026 -> JSON  
 
