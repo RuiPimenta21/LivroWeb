@@ -27,4 +27,4 @@ ex023 -> Eventos com funcao js fora do ficheiro hmt
 ex024 -> Eventos com funcao js fora do ficheiro hmt  
 ex025 -> Eventos com funcao js fora do ficheiro hmt
 ex026 -> JSON  
-
+ex027 -> Pedido Ajax

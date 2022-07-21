@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex027</title>
+    <link rel="shortcut icon" href="imagens/Fav_Ico1.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Meu Web Site</h1>
+
+    <h2>Texto estático para mostar dados ou atualizar dados não é necessario refrescar a pagina</h2>
+    <h4>Vê o video enquanto carregas no botao pra ir buscar dados atualizados</h4>
+    <video controls autoplay loop width="500" height="400" poster="imagens/Thumbnail.png">
+        <source src="videos/meuVideo.mp4" type="video/mp4">
+        <source src="videos/meuVideo.m4v" type="video/mp4">
+        <source src="videos/meuVideo.webm" type="video/webm">
+        <source src="videos/meuVideo.ogv" type="video/ogg">
+        <p>
+            Infelizmente o teu navegador não suporta vídeo (mp4,m4v,webm e ogg).
+            <li>Clica <a href="videos/meuVideo.ogv" download="meuVideo.ogv" type="application/ogg">Aqui!</a></li>
+        </p>
+    </video><br><br>
+    
+    <button type="button" onclick="carregarDataAtual()">Mostrar Data</button>
+    <button type="button" onclick="carregarTexto()">Mostrar Texto</button>
+    
+    <p id="lblData"></p>
+    <br><br>
+    <p id="lblTexto"></p>   
+</body>
+
+
+<script>
+    function carregarDataAtual() {
+
+        //Inicializa o objeto XMLHttpRequest
+        var xhttp = new XMLHttpRequest();
+
+        //Monitoriza as alterações de estado do pedido
+        xhttp.onreadystatechange = function() {
+
+            const done = 4 //readyState 4 significa que o pedido terminou
+            const ok = 200 // status 200 indica um retorno com sucesso
+
+            if (this.readyState == done && this.status == ok) {
+                //Texto retornado
+                document.getElementById("lblData").innerHTML = this.responseText;
+            }
+            else{
+                //Ocorrência de erro durante o pedido
+                console.log("Erro " + this.status)
+            }
+        };
+        
+        //Envia o pedido para o ficheiro
+        xhttp.open("GET", "ajax/getHoraAtual.php", true);
+        xhttp.send();
+    }
+    function carregarTexto() {
+        //Inicializa o objeto XMLHttpRequest
+        var xhttp = new XMLHttpRequest();
+
+        //Monitoriza as alterações de estado do pedido
+        xhttp.onreadystatechange = function() {
+
+            const done = 4 //readyState 4 significa que o pedido terminou
+            const ok = 200 // status 200 indica um retorno com sucesso
+
+            if (this.readyState == 4 && this.status == 200) {
+                //Texto retornado
+                document.getElementById("lblTexto").innerHTML = this.responseText;
+            }
+            else{
+                //Ocorrência de erro durante o pedido
+                console.log("Erro " + this.status)
+            }
+        };
+
+        //Envia o pedido para o ficheiro
+        xhttp.open("GET", "ajax/getTextoAtual.txt", true);
+        xhttp.send();
+    }
+</script>
+
+</html>
+
+
