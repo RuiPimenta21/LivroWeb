@@ -28,3 +28,5 @@ ex024 -> Eventos com funcao js fora do ficheiro hmt
 ex025 -> Eventos com funcao js fora do ficheiro hmt
 ex026 -> JSON  
 ex027 -> Pedido Ajax
+ex028 -> API Fecth
+ex029 -> API Fecth melhorada( passa treixo para url)
